@@ -2,7 +2,7 @@
 
 Get-Spice (*Get Secure PowerShell Investigation & Control for Endpoint*) is a PowerShell script used to deploy the live-forensic tool [DFIR-ORC](https://github.com/dfir-orc) published by ANSSI. 
 It takes advantage of the host-integrity module of Symantec Endpoint Protection (SEP) which allows us to execute code on any host having a SEP client.
-If you wish to know more about Get-Spice and how it works, there is an article in the MISC Hors Série n°23 (FR).
+If you wish to know more about Get-Spice and how it works, there is an article in the [MISC Hors Série n°23 (FR)](https://connect.ed-diamond.com/MISC/mischs-023/antivirus-powershell-et-orc-pour-le-live-forensics).
 
 Get-Spice works in two stages. The first stage is the powershell script `stager.ps1`. This is the script that will
 be executed by SEP through the Host-Integrity policy. This stager will just download and execute in memory (Windows 10 only, file mode for Windows 7) the Get-Spice script that will execute and manage the DFIR-ORC execution and results.
